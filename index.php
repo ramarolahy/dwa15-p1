@@ -6,11 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <title>Project 1</title>
+
 </head>
-<body>
+<?php
+    $quotes = array(
+         "\"Be yourself; everyone else is already taken.\"<br> ― Oscar Wilde",
+        "\"Be the change that you wish to see in the world.\"<br> ― Mahatma Gandhi",
+        "\"No one can make you feel inferior without your consent.\"<br> ― Eleanor Roosevelt"
+    );
+
+    $randQuote = array_rand($quotes);
+?>
+<body class="mt-5">
     <div class="container">
-        <div class="card" style="width: 50rem;">
+        <div class="card mx-auto" style="width: 50rem;">
             <div class="card-body">
                 <h1 class="card-title text-center">Mbinintsoa "Ram" Ramarolahy</h1>
             </div>
@@ -28,7 +39,11 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Random Quote</h5>
-
+                <div class="card py-3 quote">
+                    <?php
+                        echo "<h2 class='text-center'> $quotes[$randQuote]</h2>"
+                    ?>
+                </div>
             </div>
         </div>
     </div>
