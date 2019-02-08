@@ -22,8 +22,8 @@ $randQuoteKey = array_rand($quotes);
 ?>
 <body class="my-5">
 <div class="container">
-    <div class="card mx-auto" style="width: 50rem;">
-        <div class="card-body bg-light">
+    <div class="card mx-auto bg-light">
+        <div class="card-body">
             <h1 class="card-title text-center text-dark">Mbinintsoa "Ram" Ramarolahy</h1>
         </div>
         <div class="card-body py-3 pt-3">
