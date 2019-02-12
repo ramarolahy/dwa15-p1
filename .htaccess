@@ -1,14 +1,15 @@
+# Add awesome looking Error pages here
 ErrorDocument 404 "OOPS! The page you were looking for is missing!"
 
 <IfModule mod_expires.c>
     ExpiresActive On
-
-    ExpiresByType text/css "access 7 days"
-    ExpiresByType text/javascript "access 7 days"
-
-    ExpiresByType image/jpeg "access 7 days"
-    ExpiresByType image/gif "access 7 days"
-    ExpiresByType image/png "access 7 days"
+    # CSS and Javascript
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType text/javascript "access plus 7 days"
+    # Images
+    ExpiresByType image/jpeg "access plus 7 days"
+    ExpiresByType image/gif "access plus 7 days"
+    ExpiresByType image/png "access plus 7 days"
 </IfModule>
 
 <ifModule mod_gzip.c>
